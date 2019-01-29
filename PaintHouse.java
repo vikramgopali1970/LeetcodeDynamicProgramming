@@ -8,8 +8,8 @@ public class PaintHouse {
      * The approach used here is that we paint the house with the colour that has minimum cost in the
      * pool of all colours except the colour painted to the previous house.
      * */
-    public int minCostRecurssive(int[][] costs) {
-        return this.minCostRecurr(costs,0,0,0);
+    public int minCostRecursion(int[][] costs) {
+        return this.minCostRecursionHelper(costs,0,0,0);
     }
 
     private int minimum(int[] arr){
@@ -22,21 +22,21 @@ public class PaintHouse {
         return min;
     }
 
-    private int minCostRecurr(int[][] costs,int ind, int lp, int result){
+    private int minCostRecursionHelper(int[][] costs,int ind, int lp, int result){
         if(ind == costs.length){
             return result;
         }
         int[] res = new int[costs[0].length];
         if(ind == 0){
             for(int i=0;i<costs[0].length;i++){
-                res[i] = this.minCostRecurr(costs,ind+1,i,result+costs[ind][i]);
+                res[i] = this.minCostRecursionHelper(costs,ind+1,i,result+costs[ind][i]);
             }
         }else{
             for(int i=0;i<costs[0].length;i++){
                 if(i==lp){
                     res[i] = Integer.MAX_VALUE;
                 }else{
-                    res[i] = this.minCostRecurr(costs,ind+1,i,result+costs[ind][i]);
+                    res[i] = this.minCostRecursionHelper(costs,ind+1,i,result+costs[ind][i]);
                 }
             }
         }

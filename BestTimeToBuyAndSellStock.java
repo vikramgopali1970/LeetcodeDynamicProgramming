@@ -13,18 +13,18 @@ public class BestTimeToBuyAndSellStock {
         if(prices.length == 0){
             return 0;
         }
-        return this.maxProfitRecurrsion(prices,1,prices[0],0);
+        return this.maxProfitRecursionHelper(prices,1,prices[0],0);
     }
 
-    private int maxProfitRecurrsion(int[] prices,int ind,int buy,int profit){
+    private int maxProfitRecursionHelper(int[] prices,int ind,int buy,int profit){
         // System.out.println(profit);
         if(ind == prices.length){
             return profit;
         }else{
             if(prices[ind] <= buy){
-                profit = this.maxProfitRecurrsion(prices,ind+1,prices[ind],profit);
+                profit = this.maxProfitRecursionHelper(prices,ind+1,prices[ind],profit);
             }else{
-                profit =this.maxProfitRecurrsion(prices,ind+1,buy,Math.max(profit,prices[ind]-buy));
+                profit =this.maxProfitRecursionHelper(prices,ind+1,buy,Math.max(profit,prices[ind]-buy));
             }
         }
         return profit;
