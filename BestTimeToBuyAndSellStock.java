@@ -35,6 +35,9 @@ public class BestTimeToBuyAndSellStock {
      * sell price and we calculate the profit and update it if it is better than the previous profit.
      * */
     public int maxProfitDP(int[] prices){
+        if(prices.length == 0){
+            return 0;
+        }
         int profit = 0;
         int buy = prices[0];
         for(int i=1;i<prices.length;i++){
