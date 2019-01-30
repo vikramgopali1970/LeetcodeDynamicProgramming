@@ -32,6 +32,15 @@ public class Main {
         /**
          * Leet Code #53: Maximum Subarray
          * */
+//        MaximumSubarray msa = new MaximumSubarray();
+//        System.out.println(msa.maxSubArray(new int[]{1,2,3,4,-3,-4,5,4,6}));
+
+
+        /**
+         * Leet Code #198: House Robber
+         * */
+//        HouseRobber hr = new HouseRobber();
+//        System.out.println(hr.robDP(new int[]{1,2,3,4,-3,-4,5,4,6}));
     }
 
 }
