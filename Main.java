@@ -41,6 +41,12 @@ public class Main {
          * */
 //        HouseRobber hr = new HouseRobber();
 //        System.out.println(hr.robDP(new int[]{1,2,3,4,-3,-4,5,4,6}));
+
+        /**
+         * Leet Code #276: Paint Fence
+         * */
+//        PaintFence pf = new PaintFence();
+//        System.out.println(pf.numWays(3,2));
     }
 
 }
