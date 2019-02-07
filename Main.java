@@ -69,9 +69,21 @@ public class Main {
         /**
          * Leet Code #931: Minimum Falling Path Sum
          * */
-        MinimumFallingPathSum mfs = new MinimumFallingPathSum();
-        System.out.println(mfs.minFallingPathSumDP(new int[][]{{-51,-35,74},{-62,14,-53},{94,61,-10}}));
+//        MinimumFallingPathSum mfs = new MinimumFallingPathSum();
+//        System.out.println(mfs.minFallingPathSumDP(new int[][]{{-51,-35,74},{-62,14,-53},{94,61,-10}}));
 
+//        CoinChangeUnlimited ps = new CoinChangeUnlimited();
+//        System.out.println(ps.coinChangeUnlimitedRecursion(5,new int[]{1, 2, 5}));
+
+//        NumberOfOccuranceofSubsequenceT noost = new NumberOfOccuranceofSubsequenceT();
+//        System.out.println(noost.countNumber("GeeksforGeeks","Gks"));
+
+
+        /**
+         * Leet Code #413: Arithmetic Slices
+         * */
+        ArithmeticSlices as = new ArithmeticSlices();
+        System.out.println(as.numberOfArithmeticSlicesDP(new int[]{1,2,3,4,6,7,8,9}));
 
     }
 
