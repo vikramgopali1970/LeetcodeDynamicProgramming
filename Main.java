@@ -82,9 +82,15 @@ public class Main {
         /**
          * Leet Code #413: Arithmetic Slices
          * */
-        ArithmeticSlices as = new ArithmeticSlices();
-        System.out.println(as.numberOfArithmeticSlicesDP(new int[]{1,2,3,4,6,7,8,9}));
+//        ArithmeticSlices as = new ArithmeticSlices();
+//        System.out.println(as.numberOfArithmeticSlicesDP(new int[]{1,2,3,4,6,7,8,9}));
 
+
+        /**
+         * Leet Code #646: Maximum Length of Pair Chain
+         * */
+        MaximumLengthofPairChain mlopc = new MaximumLengthofPairChain();
+        System.out.println(mlopc.findLongestChain(new int[][]{{-6,9},{1,6},{8,10},{-1,4},{-6,-2},{-9,8},{-5,3},{0,3}}));
     }
 
 }
