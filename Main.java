@@ -95,7 +95,13 @@ public class Main {
         /**
          * Leet Code #638: Shopping Offers
          * */
-        ShoppingOffers so = new ShoppingOffers();
+//        ShoppingOffers so = new ShoppingOffers();
+
+        /**
+         * Leet Code #62: Unique Paths
+         * */
+        UniquePaths up = new UniquePaths();
+        System.out.println(up.uniquePathsDP(51,9));
     }
 
 }
