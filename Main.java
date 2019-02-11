@@ -89,8 +89,13 @@ public class Main {
         /**
          * Leet Code #646: Maximum Length of Pair Chain
          * */
-        MaximumLengthofPairChain mlopc = new MaximumLengthofPairChain();
-        System.out.println(mlopc.findLongestChain(new int[][]{{-6,9},{1,6},{8,10},{-1,4},{-6,-2},{-9,8},{-5,3},{0,3}}));
+//        MaximumLengthofPairChain mlopc = new MaximumLengthofPairChain();
+//        System.out.println(mlopc.findLongestChain(new int[][]{{-6,9},{1,6},{8,10},{-1,4},{-6,-2},{-9,8},{-5,3},{0,3}}));
+
+        /**
+         * Leet Code #638: Shopping Offers
+         * */
+        ShoppingOffers so = new ShoppingOffers();
     }
 
 }
