@@ -100,8 +100,15 @@ public class Main {
         /**
          * Leet Code #62: Unique Paths
          * */
-        UniquePaths up = new UniquePaths();
-        System.out.println(up.uniquePathsDP(51,9));
+//        UniquePaths up = new UniquePaths();
+//        System.out.println(up.uniquePathsDP(51,9));
+
+
+        /**
+         * Leet Code #392: Is Subsequence
+         * */
+        IsSubsequence is = new IsSubsequence();
+        System.out.println(is.isSubsequence("abc","adjsnjcbdjnc"));
     }
 
 }
