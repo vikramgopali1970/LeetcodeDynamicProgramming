@@ -107,8 +107,14 @@ public class Main {
         /**
          * Leet Code #392: Is Subsequence
          * */
-        IsSubsequence is = new IsSubsequence();
-        System.out.println(is.isSubsequence("abc","adjsnjcbdjnc"));
+//        IsSubsequence is = new IsSubsequence();
+//        System.out.println(is.isSubsequence("abc","adjsnjcbdjnc"));
+
+
+        /**
+         * Leet Code #64: Minimum Path Sum
+         * */
+//        MinimumPathSum mps = new MinimumPathSum();
     }
 
 }
