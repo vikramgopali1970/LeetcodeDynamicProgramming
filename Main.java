@@ -1,5 +1,7 @@
 package LeetcodeDynamicProgramming;
 
+import LeetProblem.NumberofEnclaves;
+
 public class Main {
 
     public static void main(String[] args){
@@ -72,8 +74,8 @@ public class Main {
 //        MinimumFallingPathSum mfs = new MinimumFallingPathSum();
 //        System.out.println(mfs.minFallingPathSumDP(new int[][]{{-51,-35,74},{-62,14,-53},{94,61,-10}}));
 
-//        CoinChangeUnlimited ps = new CoinChangeUnlimited();
-//        System.out.println(ps.coinChangeUnlimitedRecursion(5,new int[]{1, 2, 5}));
+        CoinChangeUnlimited ps = new CoinChangeUnlimited();
+        System.out.println(ps.change(500,new int[]{3,5,7,8,9,10,11}));
 
 //        NumberOfOccuranceofSubsequenceT noost = new NumberOfOccuranceofSubsequenceT();
 //        System.out.println(noost.countNumber("GeeksforGeeks","Gks"));
@@ -115,6 +117,19 @@ public class Main {
          * Leet Code #64: Minimum Path Sum
          * */
 //        MinimumPathSum mps = new MinimumPathSum();
+
+
+//        LongestCommonSubsequence lcs = new LongestCommonSubsequence();
+//        lcs.dpLCS("abcde","ace");
+
+//        StoneGameII sg2 = new StoneGameII();
+//        sg2.recursivesg2(new int[]{8270,7145,575,5156,5126,2905,8793,7817,5532,5726,7071,7730,5200,5369,5763,7148,8287,9449,7567,4850,1385,2135,1737,9511,8065,7063,8023,7729,7084,8407});
+//        sg2.memosg2(new int[]{8270,7145,575,5156,5126,2905,8793,7817,5532,5726,7071,7730,5200,5369,5763,7148,8287,9449,7567,4850,1385,2135,1737,9511,8065,7063,8023,7729,7084,8407});
+//        sg2.memosg2(new int[]{2,7,9,4,4});
+
+//        NumberofDiceRollsWithTargetSum ndrwts = new NumberofDiceRollsWithTargetSum();
+//        System.out.println(ndrwts.numRollsToTarget(30,30,500));
+//        System.out.println(ndrwts.numRollsToTarget(2,6,7));
     }
 
 }

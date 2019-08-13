@@ -1,28 +1,43 @@
 package LeetcodeDynamicProgramming;
 
 public class CoinChangeUnlimited {
+    int[][] dp;
 
-    int result;
-
-    public int coinChangeUnlimitedRecursion(int sum, int[] coins){
-        this.result = 0;
-        this.coinChangeUnlimitedRecursionHelper(coins,coins.length-1,sum);
-        return this.result;
+    public int change(int amount, int[] coins) {
+        if(coins.length == 0 && amount > 0){
+            return 0;
+        }
+        if(amount == 0 || coins.length == 0){
+            return 1;
+        }
+        this.dp = new int[coins.length][amount+1];
+        for(int i=0;i<this.dp.length;i++){
+            for(int j=0;j<this.dp[i].length;j++){
+                this.dp[i][j] = -1;
+            }
+        }
+        this.coinChangeUnlimitedRecursionHelper(coins,coins.length-1,amount);
+        return this.dp[coins.length-1][amount];
     }
 
-    private void coinChangeUnlimitedRecursionHelper(int[] coins, int ind, int sum){
+    private int coinChangeUnlimitedRecursionHelper(int[] coins, int ind, int sum){
         if(ind < 0 && sum != 0){
-            return;
+            return 0;
         }
         if(sum < 0){
-            return;
+            return 0;
         }
         if(sum == 0){
-            this.result++;
-            return;
+            return 1;
         }
+        if(this.dp[ind][sum] != -1){
+            return this.dp[ind][sum];
+        }
+        int res = 0;
         for(int i=0;i<=Math.floor(sum/coins[ind]);i++){
-            this.coinChangeUnlimitedRecursionHelper(coins,ind-1,sum - i*coins[ind]);
+            res += this.coinChangeUnlimitedRecursionHelper(coins,ind-1,sum - i*coins[ind]);
         }
+        this.dp[ind][sum] = res;
+        return this.dp[ind][sum];
     }
 }
